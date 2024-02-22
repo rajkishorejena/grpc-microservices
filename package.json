@@ -1,0 +1,31 @@
+{
+  "name": "grpc-microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-degree": "node ./degree/main.js",
+     "start-processor": "node ./process/main.js",
+    "start": "concurrently 'npm run start-degree' 'npm run start-processor'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/rajkishorejena/grpc-microservices.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajkishorejena/grpc-microservices/issues"
+  },
+  "homepage": "https://github.com/rajkishorejena/grpc-microservices#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.1",
+    "@grpc/proto-loader": "^0.7.10",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
